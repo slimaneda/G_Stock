@@ -1,5 +1,16 @@
-﻿Public Class Class_coding
+﻿Imports System.Data.SqlClient
 
+Public Class Class_coding
+
+
+
+
+
+
+
+
+
+    '===================shwit panel (menu button )===============================
     Sub switchpanel(ByVal panelfirst As Panel, ByVal panelsecende As Form, xtt As Form)
         panelfirst.Controls.Clear()
 
@@ -10,7 +21,7 @@
         panelfirst.Size = panelsecende.Size
 
     End Sub
-
+    '=================================================================================
 
 
 
