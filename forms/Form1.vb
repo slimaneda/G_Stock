@@ -1,15 +1,19 @@
-﻿Public Class Form1
+﻿
+
+Public Class Form1
+
+
     Dim clascode As New Class_coding
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
+        Open_connexion()
         clascode.switchpanel(Panel_Accueil, Accueil, Me)
     End Sub
 
 
     '=================== menu button===================
     Public Sub Btn_stock_Click(sender As Object, e As EventArgs) Handles Btn_stock.Click
-        clascode.switchpanel(Panel_Accueil, Stock, Me)
+        clascode.switchpanel(Panel_Accueil, Stock_initial, Me)
 
     End Sub
 
