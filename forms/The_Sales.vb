@@ -1,4 +1,4 @@
-﻿Public Class Depts
+﻿Public Class The_Sales
     Dim _Class_depts As New Class_depts
 
 

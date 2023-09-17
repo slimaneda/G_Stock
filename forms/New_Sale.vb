@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
-Public Class Selling
+Public Class New_Sale
     Private Sub Selling_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' DGV1.DataSource = Stock_initial.DGV.DataSource
 

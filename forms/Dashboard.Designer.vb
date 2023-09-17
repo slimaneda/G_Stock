@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Accueil
+Partial Class Dashboard
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -512,7 +512,7 @@ Partial Class Accueil
         TextBox22.Text = "Customers"
         TextBox22.TextAlign = HorizontalAlignment.Center
         ' 
-        ' Accueil
+        ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
@@ -530,8 +530,8 @@ Partial Class Accueil
         Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(4)
-        Name = "Accueil"
-        Text = "Assetes"
+        Name = "Dashboard"
+        Text = "Dashboard"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)

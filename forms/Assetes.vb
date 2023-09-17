@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Microsoft.VisualBasic.Devices
 
-Public Class Stock_initial
+Public Class Assetes
     Dim _Class_Stock As New Class_Stock
 
 

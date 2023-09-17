@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class FMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,8 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(FMain))
         Panel_menu = New Panel()
+        Button2 = New Button()
+        Button1 = New Button()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         Btn_Selling = New Button()
@@ -34,8 +36,6 @@ Partial Class Form1
         Panel_Accueil = New Panel()
         Timer1 = New Timer(components)
         Timer2 = New Timer(components)
-        Button1 = New Button()
-        Button2 = New Button()
         Panel_menu.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -57,6 +57,38 @@ Partial Class Form1
         Panel_menu.Name = "Panel_menu"
         Panel_menu.Size = New Size(208, 628)
         Panel_menu.TabIndex = 0
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = SystemColors.Control
+        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
+        Button2.BackgroundImageLayout = ImageLayout.Stretch
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.ForeColor = SystemColors.Control
+        Button2.Location = New Point(1, 448)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(201, 66)
+        Button2.TabIndex = 16
+        Button2.Text = "Setting"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = SystemColors.Control
+        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
+        Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.ForeColor = SystemColors.Control
+        Button1.Location = New Point(0, 376)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(201, 66)
+        Button1.TabIndex = 15
+        Button1.Text = "Customers"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -158,39 +190,7 @@ Partial Class Form1
         ' 
         Timer2.Interval = 1000
         ' 
-        ' Button1
-        ' 
-        Button1.BackColor = SystemColors.Control
-        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
-        Button1.BackgroundImageLayout = ImageLayout.Stretch
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(0, 376)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(201, 66)
-        Button1.TabIndex = 15
-        Button1.Text = "Customers"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = SystemColors.Control
-        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
-        Button2.BackgroundImageLayout = ImageLayout.Stretch
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.ForeColor = SystemColors.Control
-        Button2.Location = New Point(1, 448)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(201, 66)
-        Button2.TabIndex = 16
-        Button2.Text = "Setting"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Form1
+        ' Main
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
@@ -200,7 +200,7 @@ Partial Class Form1
         Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Margin = New Padding(4)
         MaximizeBox = False
-        Name = "Form1"
+        Name = "Main"
         Text = "Main"
         Panel_menu.ResumeLayout(False)
         Panel_menu.PerformLayout()
