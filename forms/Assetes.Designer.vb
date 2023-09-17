@@ -23,9 +23,9 @@ Partial Class Assetes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         DGV = New DataGridView()
         txt_nameitme = New TextBox()
         GroupBox3 = New GroupBox()
@@ -58,31 +58,31 @@ Partial Class Assetes
         DGV.AccessibleRole = AccessibleRole.None
         DGV.AllowUserToAddRows = False
         DGV.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle4.ForeColor = Color.White
-        DGV.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
+        DataGridViewCellStyle1.ForeColor = Color.White
+        DGV.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DGV.BackgroundColor = SystemColors.Control
+        DGV.BackgroundColor = SystemColors.Window
         DGV.BorderStyle = BorderStyle.None
         DGV.CellBorderStyle = DataGridViewCellBorderStyle.Sunken
         DGV.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = SystemColors.Control
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle5.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = SystemColors.GradientInactiveCaption
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        DGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Control
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        DGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         DGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle6.BackColor = SystemColors.Control
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle6.SelectionForeColor = Color.White
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        DGV.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle3.BackColor = SystemColors.Control
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        DGV.DefaultCellStyle = DataGridViewCellStyle3
         DGV.Dock = DockStyle.Bottom
         DGV.EditMode = DataGridViewEditMode.EditOnKeystroke
         DGV.EnableHeadersVisualStyles = False
@@ -100,7 +100,7 @@ Partial Class Assetes
         ' 
         ' txt_nameitme
         ' 
-        txt_nameitme.BackColor = SystemColors.ControlLight
+        txt_nameitme.BackColor = SystemColors.Window
         txt_nameitme.Location = New Point(135, 34)
         txt_nameitme.Multiline = True
         txt_nameitme.Name = "txt_nameitme"
@@ -229,7 +229,7 @@ Partial Class Assetes
         ' 
         ' txt_selling
         ' 
-        txt_selling.BackColor = SystemColors.ControlLight
+        txt_selling.BackColor = SystemColors.Window
         txt_selling.Location = New Point(150, 130)
         txt_selling.Multiline = True
         txt_selling.Name = "txt_selling"
@@ -251,7 +251,7 @@ Partial Class Assetes
         ' 
         ' txt_purchasing
         ' 
-        txt_purchasing.BackColor = SystemColors.ControlLight
+        txt_purchasing.BackColor = SystemColors.Window
         txt_purchasing.Location = New Point(154, 95)
         txt_purchasing.Multiline = True
         txt_purchasing.Name = "txt_purchasing"
@@ -273,7 +273,7 @@ Partial Class Assetes
         ' 
         ' txt_name
         ' 
-        txt_name.BackColor = SystemColors.ControlLight
+        txt_name.BackColor = SystemColors.Window
         txt_name.Cursor = Cursors.IBeam
         txt_name.Location = New Point(79, 64)
         txt_name.Multiline = True
@@ -315,7 +315,7 @@ Partial Class Assetes
         ' 
         ' txt_code
         ' 
-        txt_code.BackColor = SystemColors.ControlLight
+        txt_code.BackColor = SystemColors.Window
         txt_code.Enabled = False
         txt_code.Location = New Point(110, 31)
         txt_code.Multiline = True

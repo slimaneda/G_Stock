@@ -36,6 +36,7 @@ Partial Class FMain
         Panel_Accueil = New Panel()
         Timer1 = New Timer(components)
         Timer2 = New Timer(components)
+        btn_setting = New Button()
         Panel_menu.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -43,6 +44,7 @@ Partial Class FMain
         ' Panel_menu
         ' 
         Panel_menu.BackColor = SystemColors.Control
+        Panel_menu.Controls.Add(btn_setting)
         Panel_menu.Controls.Add(Button2)
         Panel_menu.Controls.Add(Button1)
         Panel_menu.Controls.Add(Label1)
@@ -61,7 +63,6 @@ Partial Class FMain
         ' Button2
         ' 
         Button2.BackColor = SystemColors.Control
-        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
         Button2.BackgroundImageLayout = ImageLayout.Stretch
         Button2.FlatAppearance.BorderSize = 0
         Button2.FlatStyle = FlatStyle.Flat
@@ -190,7 +191,23 @@ Partial Class FMain
         ' 
         Timer2.Interval = 1000
         ' 
-        ' Main
+        ' btn_setting
+        ' 
+        btn_setting.BackColor = SystemColors.Control
+        btn_setting.BackgroundImage = CType(resources.GetObject("btn_setting.BackgroundImage"), Image)
+        btn_setting.BackgroundImageLayout = ImageLayout.Stretch
+        btn_setting.FlatAppearance.BorderSize = 0
+        btn_setting.FlatStyle = FlatStyle.Flat
+        btn_setting.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        btn_setting.ForeColor = SystemColors.Control
+        btn_setting.Location = New Point(12, 448)
+        btn_setting.Name = "btn_setting"
+        btn_setting.Size = New Size(201, 66)
+        btn_setting.TabIndex = 17
+        btn_setting.Text = "Setting"
+        btn_setting.UseVisualStyleBackColor = False
+        ' 
+        ' FMain
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
@@ -200,7 +217,7 @@ Partial Class FMain
         Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Margin = New Padding(4)
         MaximizeBox = False
-        Name = "Main"
+        Name = "FMain"
         Text = "Main"
         Panel_menu.ResumeLayout(False)
         Panel_menu.PerformLayout()
@@ -222,4 +239,5 @@ Partial Class FMain
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents btn_setting As Button
 End Class

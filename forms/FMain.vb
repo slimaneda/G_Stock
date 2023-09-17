@@ -48,6 +48,11 @@ Public Class FMain
     End Sub
 
 
+    Private Sub btn_setting_Click(sender As Object, e As EventArgs) Handles btn_setting.Click
+        clascode.switchpanel(Panel_Accueil, FSetting, Me)
+    End Sub
+
+
 
     '=================================================================================
 End Class

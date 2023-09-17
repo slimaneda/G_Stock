@@ -22,13 +22,13 @@ Partial Class New_Sale
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(New_Sale))
-        Dim DataGridViewCellStyle16 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         GroupBox3 = New GroupBox()
         btn_Update = New Button()
         DGV1 = New DataGridView()
@@ -98,31 +98,31 @@ Partial Class New_Sale
         DGV1.AccessibleRole = AccessibleRole.None
         DGV1.AllowUserToAddRows = False
         DGV1.AllowUserToDeleteRows = False
-        DataGridViewCellStyle13.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle13.ForeColor = Color.White
-        DGV1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
+        DataGridViewCellStyle1.ForeColor = Color.White
+        DGV1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DGV1.BackgroundColor = SystemColors.Control
+        DGV1.BackgroundColor = SystemColors.Window
         DGV1.BorderStyle = BorderStyle.None
         DGV1.CellBorderStyle = DataGridViewCellBorderStyle.Sunken
         DGV1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = SystemColors.Control
-        DataGridViewCellStyle14.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle14.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle14.SelectionBackColor = SystemColors.GradientInactiveCaption
-        DataGridViewCellStyle14.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = DataGridViewTriState.True
-        DGV1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Control
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        DGV1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         DGV1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle15.BackColor = SystemColors.Control
-        DataGridViewCellStyle15.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle15.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle15.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle15.SelectionForeColor = Color.White
-        DataGridViewCellStyle15.WrapMode = DataGridViewTriState.False
-        DGV1.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle3.BackColor = SystemColors.Control
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        DGV1.DefaultCellStyle = DataGridViewCellStyle3
         DGV1.Dock = DockStyle.Bottom
         DGV1.EditMode = DataGridViewEditMode.EditOnKeystroke
         DGV1.EnableHeadersVisualStyles = False
@@ -152,7 +152,7 @@ Partial Class New_Sale
         ' 
         ' TextBox4
         ' 
-        TextBox4.BackColor = SystemColors.Control
+        TextBox4.BackColor = SystemColors.Window
         TextBox4.BorderStyle = BorderStyle.FixedSingle
         TextBox4.Location = New Point(123, 34)
         TextBox4.Multiline = True
@@ -210,31 +210,31 @@ Partial Class New_Sale
         DGV2.AccessibleRole = AccessibleRole.None
         DGV2.AllowUserToAddRows = False
         DGV2.AllowUserToDeleteRows = False
-        DataGridViewCellStyle16.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle16.ForeColor = Color.White
-        DGV2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
+        DataGridViewCellStyle4.ForeColor = Color.White
+        DGV2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         DGV2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DGV2.BackgroundColor = SystemColors.Control
+        DGV2.BackgroundColor = SystemColors.Window
         DGV2.BorderStyle = BorderStyle.None
         DGV2.CellBorderStyle = DataGridViewCellBorderStyle.Sunken
         DGV2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = SystemColors.Control
-        DataGridViewCellStyle17.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle17.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle17.SelectionBackColor = SystemColors.GradientInactiveCaption
-        DataGridViewCellStyle17.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle17.WrapMode = DataGridViewTriState.True
-        DGV2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = SystemColors.Control
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        DGV2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         DGV2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle18.BackColor = SystemColors.Control
-        DataGridViewCellStyle18.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle18.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle18.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle18.SelectionForeColor = Color.White
-        DataGridViewCellStyle18.WrapMode = DataGridViewTriState.False
-        DGV2.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle6.BackColor = SystemColors.Control
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle6.SelectionForeColor = Color.White
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
+        DGV2.DefaultCellStyle = DataGridViewCellStyle6
         DGV2.Dock = DockStyle.Bottom
         DGV2.EditMode = DataGridViewEditMode.EditOnKeystroke
         DGV2.EnableHeadersVisualStyles = False
@@ -330,7 +330,7 @@ Partial Class New_Sale
         ' 
         ' txt_num_cstmer
         ' 
-        txt_num_cstmer.BackColor = Color.White
+        txt_num_cstmer.BackColor = SystemColors.Window
         txt_num_cstmer.BorderStyle = BorderStyle.FixedSingle
         txt_num_cstmer.Location = New Point(478, 42)
         txt_num_cstmer.Multiline = True
@@ -353,7 +353,7 @@ Partial Class New_Sale
         ' 
         ' Txt_qty
         ' 
-        Txt_qty.BackColor = Color.White
+        Txt_qty.BackColor = SystemColors.Window
         Txt_qty.BorderStyle = BorderStyle.FixedSingle
         Txt_qty.Location = New Point(147, 109)
         Txt_qty.Multiline = True
@@ -386,7 +386,7 @@ Partial Class New_Sale
         ' 
         ' txt_selling
         ' 
-        txt_selling.BackColor = Color.White
+        txt_selling.BackColor = SystemColors.Window
         txt_selling.BorderStyle = BorderStyle.FixedSingle
         txt_selling.Enabled = False
         txt_selling.Location = New Point(148, 76)
@@ -398,7 +398,7 @@ Partial Class New_Sale
         ' txt_name
         ' 
         txt_name.AcceptsTab = True
-        txt_name.BackColor = Color.White
+        txt_name.BackColor = SystemColors.Window
         txt_name.BorderStyle = BorderStyle.FixedSingle
         txt_name.Enabled = False
         txt_name.Location = New Point(78, 42)
