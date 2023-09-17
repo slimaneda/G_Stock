@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         Panel_menu = New Panel()
         Label1 = New Label()
@@ -31,6 +32,10 @@ Partial Class Form1
         Btn_stock = New Button()
         Btn_Accueil = New Button()
         Panel_Accueil = New Panel()
+        Timer1 = New Timer(components)
+        Timer2 = New Timer(components)
+        Button1 = New Button()
+        Button2 = New Button()
         Panel_menu.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -38,6 +43,8 @@ Partial Class Form1
         ' Panel_menu
         ' 
         Panel_menu.BackColor = SystemColors.Control
+        Panel_menu.Controls.Add(Button2)
+        Panel_menu.Controls.Add(Button1)
         Panel_menu.Controls.Add(Label1)
         Panel_menu.Controls.Add(PictureBox1)
         Panel_menu.Controls.Add(Btn_Selling)
@@ -63,9 +70,9 @@ Partial Class Form1
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(3, 0)
+        PictureBox1.Location = New Point(10, 13)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(205, 112)
+        PictureBox1.Size = New Size(188, 60)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 13
         PictureBox1.TabStop = False
@@ -79,11 +86,11 @@ Partial Class Form1
         Btn_Selling.FlatStyle = FlatStyle.Flat
         Btn_Selling.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Btn_Selling.ForeColor = SystemColors.Control
-        Btn_Selling.Location = New Point(2, 266)
+        Btn_Selling.Location = New Point(2, 232)
         Btn_Selling.Name = "Btn_Selling"
         Btn_Selling.Size = New Size(201, 66)
         Btn_Selling.TabIndex = 12
-        Btn_Selling.Text = "Sell​ item"
+        Btn_Selling.Text = "New Sale"
         Btn_Selling.UseVisualStyleBackColor = False
         ' 
         ' btn_Depts
@@ -95,11 +102,11 @@ Partial Class Form1
         btn_Depts.FlatStyle = FlatStyle.Flat
         btn_Depts.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btn_Depts.ForeColor = SystemColors.Control
-        btn_Depts.Location = New Point(-1, 338)
+        btn_Depts.Location = New Point(-1, 304)
         btn_Depts.Name = "btn_Depts"
         btn_Depts.Size = New Size(201, 66)
         btn_Depts.TabIndex = 11
-        btn_Depts.Text = "Depts"
+        btn_Depts.Text = "The Sales"
         btn_Depts.UseVisualStyleBackColor = False
         ' 
         ' Btn_stock
@@ -111,11 +118,11 @@ Partial Class Form1
         Btn_stock.FlatStyle = FlatStyle.Flat
         Btn_stock.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Btn_stock.ForeColor = SystemColors.Control
-        Btn_stock.Location = New Point(2, 196)
+        Btn_stock.Location = New Point(2, 162)
         Btn_stock.Name = "Btn_stock"
         Btn_stock.Size = New Size(201, 66)
         Btn_stock.TabIndex = 10
-        Btn_stock.Text = "Stock "
+        Btn_stock.Text = "Assetes"
         Btn_stock.UseVisualStyleBackColor = False
         ' 
         ' Btn_Accueil
@@ -127,11 +134,11 @@ Partial Class Form1
         Btn_Accueil.FlatStyle = FlatStyle.Flat
         Btn_Accueil.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Btn_Accueil.ForeColor = SystemColors.Control
-        Btn_Accueil.Location = New Point(-1, 129)
+        Btn_Accueil.Location = New Point(-1, 95)
         Btn_Accueil.Name = "Btn_Accueil"
         Btn_Accueil.Size = New Size(201, 66)
         Btn_Accueil.TabIndex = 8
-        Btn_Accueil.Text = "Accueil"
+        Btn_Accueil.Text = "Dashbord"
         Btn_Accueil.UseVisualStyleBackColor = False
         ' 
         ' Panel_Accueil
@@ -143,6 +150,46 @@ Partial Class Form1
         Panel_Accueil.Size = New Size(1063, 628)
         Panel_Accueil.TabIndex = 1
         ' 
+        ' Timer1
+        ' 
+        Timer1.Interval = 1000
+        ' 
+        ' Timer2
+        ' 
+        Timer2.Interval = 1000
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = SystemColors.Control
+        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
+        Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.ForeColor = SystemColors.Control
+        Button1.Location = New Point(0, 376)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(201, 66)
+        Button1.TabIndex = 15
+        Button1.Text = "Customers"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = SystemColors.Control
+        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
+        Button2.BackgroundImageLayout = ImageLayout.Stretch
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.ForeColor = SystemColors.Control
+        Button2.Location = New Point(1, 448)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(201, 66)
+        Button2.TabIndex = 16
+        Button2.Text = "Setting"
+        Button2.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
@@ -152,6 +199,7 @@ Partial Class Form1
         Controls.Add(Panel_menu)
         Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Margin = New Padding(4)
+        MaximizeBox = False
         Name = "Form1"
         Text = "Main"
         Panel_menu.ResumeLayout(False)
@@ -170,4 +218,8 @@ Partial Class Form1
     Friend WithEvents Btn_stock As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

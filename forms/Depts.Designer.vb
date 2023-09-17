@@ -22,87 +22,29 @@ Partial Class Depts
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridView1 As DataGridView
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn5 = New DataGridViewTextBoxColumn()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
         GroupBox1 = New GroupBox()
         DGV1 = New DataGridView()
         Label6 = New Label()
         TextBox3 = New TextBox()
         btn_save = New Button()
         GroupBox2 = New GroupBox()
+        DGV2 = New DataGridView()
         Label7 = New Label()
         TextBox5 = New TextBox()
         DateTimePicker1 = New DateTimePicker()
         Label5 = New Label()
         Button1 = New Button()
-        DataGridView1 = New DataGridView()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox1.SuspendLayout()
         CType(DGV1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
+        CType(DGV2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.AccessibleRole = AccessibleRole.None
-        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle1.ForeColor = Color.White
-        DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DataGridView1.BackgroundColor = SystemColors.Control
-        DataGridView1.BorderStyle = BorderStyle.None
-        DataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Sunken
-        DataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn3, Column3, Column5, DataGridViewTextBoxColumn5})
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle2.BackColor = SystemColors.Control
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        DataGridView1.Dock = DockStyle.Bottom
-        DataGridView1.EditMode = DataGridViewEditMode.EditOnKeystroke
-        DataGridView1.EnableHeadersVisualStyles = False
-        DataGridView1.GridColor = SystemColors.ActiveCaption
-        DataGridView1.Location = New Point(3, 151)
-        DataGridView1.MultiSelect = False
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridView1.RowHeadersVisible = False
-        DataGridView1.RowTemplate.Height = 25
-        DataGridView1.Size = New Size(664, 392)
-        DataGridView1.TabIndex = 15
-        ' 
-        ' DataGridViewTextBoxColumn3
-        ' 
-        DataGridViewTextBoxColumn3.HeaderText = "Code Fact"
-        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "designation"
-        Column3.Name = "Column3"
-        ' 
-        ' Column5
-        ' 
-        Column5.HeaderText = "Quantity"
-        Column5.Name = "Column5"
-        ' 
-        ' DataGridViewTextBoxColumn5
-        ' 
-        DataGridViewTextBoxColumn5.HeaderText = "Total"
-        DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         ' 
         ' GroupBox1
         ' 
@@ -122,31 +64,31 @@ Partial Class Depts
         DGV1.AccessibleRole = AccessibleRole.None
         DGV1.AllowUserToAddRows = False
         DGV1.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
-        DataGridViewCellStyle3.ForeColor = Color.White
-        DGV1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
+        DataGridViewCellStyle1.ForeColor = Color.White
+        DGV1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DGV1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGV1.BackgroundColor = SystemColors.Control
         DGV1.BorderStyle = BorderStyle.None
         DGV1.CellBorderStyle = DataGridViewCellBorderStyle.Sunken
         DGV1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = SystemColors.Control
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.GradientInactiveCaption
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        DGV1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Control
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        DGV1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         DGV1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle5.BackColor = SystemColors.Control
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        DataGridViewCellStyle5.SelectionForeColor = Color.White
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.False
-        DGV1.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle3.BackColor = SystemColors.Control
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        DGV1.DefaultCellStyle = DataGridViewCellStyle3
         DGV1.Dock = DockStyle.Bottom
         DGV1.EditMode = DataGridViewEditMode.EditOnKeystroke
         DGV1.EnableHeadersVisualStyles = False
@@ -196,9 +138,9 @@ Partial Class Depts
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.Controls.Add(DGV2)
         GroupBox2.Controls.Add(Label7)
         GroupBox2.Controls.Add(TextBox5)
-        GroupBox2.Controls.Add(DataGridView1)
         GroupBox2.Controls.Add(DateTimePicker1)
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(Button1)
@@ -208,6 +150,51 @@ Partial Class Depts
         GroupBox2.TabIndex = 13
         GroupBox2.TabStop = False
         GroupBox2.Text = "Item info"
+        ' 
+        ' DGV2
+        ' 
+        DGV2.AccessibleRole = AccessibleRole.None
+        DGV2.AllowUserToAddRows = False
+        DGV2.AllowUserToDeleteRows = False
+        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(104), CByte(160), CByte(235))
+        DataGridViewCellStyle4.ForeColor = Color.White
+        DGV2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DGV2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        DGV2.BackgroundColor = SystemColors.Control
+        DGV2.BorderStyle = BorderStyle.None
+        DGV2.CellBorderStyle = DataGridViewCellBorderStyle.Sunken
+        DGV2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = SystemColors.Control
+        DataGridViewCellStyle5.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = SystemColors.GradientInactiveCaption
+        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        DGV2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DGV2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle6.BackColor = SystemColors.Control
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        DataGridViewCellStyle6.SelectionForeColor = Color.White
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
+        DGV2.DefaultCellStyle = DataGridViewCellStyle6
+        DGV2.Dock = DockStyle.Bottom
+        DGV2.EditMode = DataGridViewEditMode.EditOnKeystroke
+        DGV2.EnableHeadersVisualStyles = False
+        DGV2.GridColor = SystemColors.ActiveCaption
+        DGV2.Location = New Point(3, 130)
+        DGV2.MultiSelect = False
+        DGV2.Name = "DGV2"
+        DGV2.ReadOnly = True
+        DGV2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
+        DGV2.RowHeadersVisible = False
+        DGV2.RowTemplate.Height = 25
+        DGV2.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        DGV2.Size = New Size(664, 413)
+        DGV2.TabIndex = 19
         ' 
         ' Label7
         ' 
@@ -282,12 +269,12 @@ Partial Class Depts
         Margin = New Padding(4)
         Name = "Depts"
         Text = "Suuplier"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         CType(DGV1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()
+        CType(DGV2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -301,9 +288,6 @@ Partial Class Depts
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label5 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DGV1 As DataGridView
+    Friend WithEvents DGV2 As DataGridView
 End Class

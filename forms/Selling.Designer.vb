@@ -25,6 +25,7 @@ Partial Class Selling
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Selling))
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
@@ -34,6 +35,8 @@ Partial Class Selling
         Label4 = New Label()
         TextBox4 = New TextBox()
         GroupBox1 = New GroupBox()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
         DGV2 = New DataGridView()
         date_shoping = New DateTimePicker()
         Label1 = New Label()
@@ -57,6 +60,8 @@ Partial Class Selling
         GroupBox3.SuspendLayout()
         CType(DGV1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox1.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DGV2, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -157,6 +162,8 @@ Partial Class Selling
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(PictureBox2)
+        GroupBox1.Controls.Add(PictureBox1)
         GroupBox1.Controls.Add(DGV2)
         GroupBox1.Controls.Add(date_shoping)
         GroupBox1.Controls.Add(Label1)
@@ -177,6 +184,26 @@ Partial Class Selling
         GroupBox1.TabIndex = 11
         GroupBox1.TabStop = False
         GroupBox1.Text = "Item info :"
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(315, 43)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(19, 21)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 18
+        PictureBox2.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(314, 78)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(19, 21)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 17
+        PictureBox1.TabStop = False
         ' 
         ' DGV2
         ' 
@@ -320,7 +347,7 @@ Partial Class Selling
         Label2.ForeColor = Color.White
         Label2.Location = New Point(7, 110)
         Label2.Name = "Label2"
-        Label2.Size = New Size(140, 23)
+        Label2.Size = New Size(135, 23)
         Label2.TabIndex = 9
         Label2.Text = "Quantity :"
         ' 
@@ -353,7 +380,7 @@ Partial Class Selling
         Label3.ForeColor = Color.White
         Label3.Location = New Point(8, 77)
         Label3.Name = "Label3"
-        Label3.Size = New Size(140, 23)
+        Label3.Size = New Size(134, 23)
         Label3.TabIndex = 5
         Label3.Text = "Selling price :" & vbCrLf
         ' 
@@ -361,10 +388,11 @@ Partial Class Selling
         ' 
         txt_selling.BackColor = Color.White
         txt_selling.BorderStyle = BorderStyle.FixedSingle
+        txt_selling.Enabled = False
         txt_selling.Location = New Point(148, 76)
         txt_selling.Multiline = True
         txt_selling.Name = "txt_selling"
-        txt_selling.Size = New Size(186, 23)
+        txt_selling.Size = New Size(162, 23)
         txt_selling.TabIndex = 4
         ' 
         ' txt_name
@@ -376,7 +404,7 @@ Partial Class Selling
         txt_name.Location = New Point(78, 42)
         txt_name.Multiline = True
         txt_name.Name = "txt_name"
-        txt_name.Size = New Size(256, 23)
+        txt_name.Size = New Size(232, 23)
         txt_name.TabIndex = 0
         ' 
         ' GroupBox2
@@ -455,13 +483,13 @@ Partial Class Selling
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1444, 641)
+        ClientSize = New Size(1031, 641)
         Controls.Add(btn_showall)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Controls.Add(GroupBox3)
         Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        FormBorderStyle = FormBorderStyle.FixedToolWindow
+        FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(4)
         Name = "Selling"
         Text = "Selling"
@@ -470,6 +498,8 @@ Partial Class Selling
         CType(DGV1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(DGV2, ComponentModel.ISupportInitialize).EndInit()
         GroupBox2.ResumeLayout(False)
         ResumeLayout(False)
@@ -501,4 +531,6 @@ Partial Class Selling
     Friend WithEvents btn_Update As Button
     Friend WithEvents DGV2 As DataGridView
     Friend WithEvents btn_showall As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

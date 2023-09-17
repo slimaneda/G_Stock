@@ -28,13 +28,13 @@ Public Class Class_depts
 
 
 
-    Sub inserdata(Num_Proc As String, code As Integer, DGV As DataGridView)
+    Sub search_Name(Num_Proc As String, code As String, DGV As DataGridView)
         Dim dt As New DataTable
         Using cmd As New SqlCommand(Num_Proc, sqlcon)
             cmd.CommandType = CommandType.StoredProcedure
 
             ' Ajoutez le paramètre pour la procédure stockée
-            cmd.Parameters.Add(New SqlParameter("@code_fact", SqlDbType.Int)).Value = code
+            cmd.Parameters.Add(New SqlParameter("@Num_customer", SqlDbType.NVarChar, 50)).Value = code
 
             Try
                 ' Créez un DataAdapter pour remplir le DataTable
@@ -49,5 +49,29 @@ Public Class Class_depts
             End Try
         End Using
     End Sub
+
+    Sub search_Code(Num_Proc As String, code As Integer, DGV As DataGridView)
+        Dim dt As New DataTable
+        Using cmd As New SqlCommand(Num_Proc, sqlcon)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            ' Ajoutez le paramètre pour la procédure stockée
+            cmd.Parameters.Add(New SqlParameter("@Code_fact", SqlDbType.Int)).Value = code
+
+            Try
+                ' Créez un DataAdapter pour remplir le DataTable
+                Dim adapter As New SqlDataAdapter(cmd)
+                adapter.Fill(dt)
+
+                ' Définissez la source de données du DataGridView
+                DGV.DataSource = dt.DefaultView
+
+            Catch ex As Exception
+                MsgBox("حدث خطأ أثناء إدراج البيانات: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
+
 
 End Class

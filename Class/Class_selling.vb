@@ -17,6 +17,8 @@ Public Class Class_selling
                 cmd.Parameters.Add(New SqlParameter("@Num_customer", SqlDbType.NVarChar, 50)).Value = cstmer
                 cmd.Parameters.Add(New SqlParameter("@date_fct", SqlDbType.Date)).Value = datfact
 
+
+
                 Try
                     cmd.ExecuteNonQuery()
                     Show_DGV(DGV, Num_select)
@@ -79,6 +81,7 @@ Public Class Class_selling
         cmd = New SqlCommand(Num_Proc, sqlcon)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add(New SqlParameter("@code_fact", SqlDbType.Int)).Value = code_fct
+
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)
         DGV.DataSource = dt.DefaultView
@@ -90,6 +93,28 @@ Public Class Class_selling
     End Sub
 
 
+    '---------------- search item---------------
+    Sub search_name(Num_Proc As String, name As String, DGV As DataGridView)
+        Dim dt As New DataTable
+        Using cmd As New SqlCommand(Num_Proc, sqlcon)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            ' Ajoutez le paramètre pour la procédure stockée
+            cmd.Parameters.Add(New SqlParameter("@Num_item", SqlDbType.NVarChar, 50)).Value = name
+
+            Try
+                ' Créez un DataAdapter pour remplir le DataTable
+                Dim adapter As New SqlDataAdapter(cmd)
+                adapter.Fill(dt)
+
+                ' Définissez la source de données du DataGridView
+                DGV.DataSource = dt.DefaultView
+
+            Catch ex As Exception
+                MsgBox("حدث خطأ أثناء إدراج البيانات: " & ex.Message)
+            End Try
+        End Using
+    End Sub
 
 
 

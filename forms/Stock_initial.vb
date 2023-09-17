@@ -10,7 +10,7 @@ Public Class Stock_initial
 
     Private Sub Stock_initial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Open_connexion()
-        Show_DGV(DGV, "Selectall")
+        Show_DGV(DGV, "Select_Stock")
         '_Class_Stock.Show_data_DGV("Selectall", DGV)
         txt_name.Select()
         txt_code.Text = CODE_GEN("Stock", "code_item") + 1
@@ -47,23 +47,23 @@ Public Class Stock_initial
     End Sub
 
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click
-        _Class_Stock.deleted("deldata", DGV, Val(txt_code.Text))
-        Show_DGV(DGV, "Selectall")
+        _Class_Stock.deleted("DELETE_Stock", DGV, Val(txt_code.Text))
+        Show_DGV(DGV, "Select_Stock")
     End Sub
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
-        _Class_Stock.inserdata("inserdata", DGV, Val(txt_code.Text), txt_name.Text, Val(txt_purchasing.Text), Val(txt_selling.Text))
+        _Class_Stock.inserdata("ADD_Stock", DGV, Val(txt_code.Text), txt_name.Text, Val(txt_purchasing.Text), Val(txt_selling.Text))
         txt_code.Text = CODE_GEN("Stock", "code_item") + 1
         txt_name.Text = ""
         txt_purchasing.Text = ""
         txt_selling.Text = ""
-        Show_DGV(DGV, "Selectall")
+        Show_DGV(DGV, "Select_Stock")
     End Sub
 
     Private Sub btn_modify_Click(sender As Object, e As EventArgs) Handles btn_modify.Click
         '_Class_Stock.UpdateDGV(txt_name.Text, Val(txt_purchasing.Text), Val(txt_selling.Text))
-        _Class_Stock.UpdatDGV("UpdateDGV", DGV, Val(txt_code.Text), txt_name.Text, Val(txt_purchasing.Text), Val(txt_selling.Text))
-        Show_DGV(DGV, "Selectall")
+        _Class_Stock.UpdatDGV("Update_Stock", DGV, Val(txt_code.Text), txt_name.Text, Val(txt_purchasing.Text), Val(txt_selling.Text))
+        Show_DGV(DGV, "Select_Stock")
 
     End Sub
 
@@ -75,7 +75,9 @@ Public Class Stock_initial
     End Sub
 
     Private Sub btn_updating_Click(sender As Object, e As EventArgs) Handles btn_updating.Click
-        Show_DGV(DGV, "Selectall")
+        Show_DGV(DGV, "Select_Stock")
         MsgBox("تم التحديث بنجاح")
     End Sub
+
+
 End Class
