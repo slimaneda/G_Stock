@@ -2,7 +2,9 @@ G-stock easy and simple sales management software helpe companies imrove thier b
 
 
 The application does not require a password, just click OK
- ////////////////////////////////////
+ 
+
+*****
 
 
 ![1](https://github.com/slimaneda/G_Stock/assets/72896629/d365c120-5409-4693-929d-a5632563f7fd)
